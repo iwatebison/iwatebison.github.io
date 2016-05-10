@@ -1,15 +1,1 @@
-/**
- * Main JS file for Casper behaviours
- */
-
-/*globals jQuery, document */
-(function ($) {
-    "use strict";
-
-    $(document).ready(function(){
-
-        $(".post-content").fitVids();
-
-    });
-
-}(jQuery));
+(function(t){"use strict";t(document).ready(function(){t(".post-content").fitVids()})})(jQuery);
