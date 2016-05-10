@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+
+    <html lang="zh-Hans">
+  
 <head>
   <meta charset="utf-8">
   
@@ -16,70 +18,191 @@
     <meta property="og:image" content="undefined"/>
   
 
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Iwablo" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+    <meta http-equiv="Content-Language" content="zh-Hans"/>
   
 
+  <link href="/img/favicon.png" rel="icon">
+  
+    <link rel="apple-touch-icon" href="/img/apple-icon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/img/apple-icon.ico">
+    
+
+  <link rel="alternate" href="/dark-tech/atom.xml" title="Iwablo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  
+  <!-- Chinese readability improment -->
+  <style type="text/css">
+    article {font-weight: 400;letter-spacing: .01rem;}
+    article .entry{line-height:2;}
+  </style>
+  
+  
+  <style type="text/css">
+  /* Tim Pietrusky advanced checkbox hack (Android <= 4.1.2) */
+body{ -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+</style>
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48887175-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+  
+    <!-- 360 Font and Baidu CDN in China -->
+    
+      <link href='http://fonts.useso.com/css?family=Open+Sans:300,400|Playball' rel='stylesheet' type='text/css'>
+    
+  <link href='http://apps.bdimg.com/libs/fontawesome/4.1.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
 
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Iwablo</a></h1>
-  <h2><a href="/"></a></h2>
+  <header id="header" class="inner"><div class="padding">
+	<div class="alignleft logo">
+	  <h1><a href="/">Iwablo</a></h1>
+	</div>
+	<nav id="main-nav" class="alignright">
+		<input type="checkbox" id="toggle" />
+		<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick><i class="fa fa-bars"></i></label>
+	  <ul class="menu">
+	    
+	      <li><a href="/dark-tech/">Home</a></li>
+	    
+	      <li><a href="/dark-tech/archives">Archives</a></li>
+	    
+	      <li><a href="/about">About</a></li>
+	    
+	      <li><a href="/guestbook">GuestBook</a></li>
+	    
+	    
+	    	<li><a href="/dark-tech/atom.xml" target="_blank" title="bruce tan blog rss" class="rss-top"><i class="fa fa-rss"></i></a></li>
+	    
+	  </ul>
+	</nav>
+	<div class="clearfix"></div>
 </div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div>
 </header>
+  <div id="page-heading-wrap">
+  	<div class="inner">
+      <div class="padding">
+    		
+          <h2></h2>
+        
+      </div>
+  	</div>
+  </div>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
+    <div id="main-col" class="alignleft"><div id="wrapper" class="padding">
   <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-05-10T08:58:56.000Z"><a href="/2016/05/10/life02/">2016-05-10</a></time>
-      
-      
   
-    <h1 class="title"><a href="/2016/05/10/life02/">BBQした話</a></h1>
+    <div class="post-content-index">
   
-
-    </header>
-    <div class="entry">
       
-        <h3 id="大型連休"><a href="#大型連休" class="headerlink" title="大型連休"></a>大型連休</h3><hr>
-<p>仕事があったので暦の通りに休んだ．3,4,5日に実家に帰り，何やかやあって死ぬほど飲み食いした記憶しかない．実家はPC環境が貧弱なので仕事もできず，ろくに遊べもしないので早々にアパートに戻る．</p>
-<h3 id="いつもの河原で肉を焼く"><a href="#いつもの河原で肉を焼く" class="headerlink" title="いつもの河原で肉を焼く"></a>いつもの河原で肉を焼く</h3><hr>
-<p>昨年恒例行事になっていた例の河原で肉を焼く会を6日にやった．その日は仕事だったので前日にささみ燻製を仕込み，仕事終わりに急いで駆けつけた．<br>しばらく使ってなかった網が錆びてたりしたけど，久しぶりに屋外でジュニアバーナー使ってウインナーゆでたり，ヤシガラ成形炭（通称課金アイテム）を使って肉を焼くのは楽しかった．ヤシガラだけでもかなり焼けるから普通に楽でいいと思った．<br>あとなんかジップロックみたいなので炊くご飯とか丸型飯盒で炊飯チャレンジしてたけどことごとく失敗してたのでまたやりたい．</p>
-<p>焚き火も楽しい</p>
-<p><blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BFEJj_duodX/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">最初の火の炉</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">@yakisovaが投稿した写真 - <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-05-06T11:53:44+00:00">2016  5月 6 4:53午前 PDT</time></p></div></blockquote></p>
-<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+        <header>
+          <div class="icon"></div>
+            
+    
+      <h1 class="title transition"><a href="/2016/05/10/life02/">BBQした話</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2016-05-10T08:58:56.000Z">2016-05-10</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
 
-<p>インスタの埋め込みコードクソ長いな</p>
+                
+                  <a href="/" target="_blank">IwateBison</a>
 
+                
+
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
+
+                <a href="/2016/05/10/life02/#ds-thread"><span class="ds-thread-count" data-thread-key="2016/05/10/life02/" data-count-type="comments"></span></a>
+              
+          </ul>
+        </header>
       
+      <div class="entry">
+        
+          
+            大型連休
+仕事があったので暦の通りに休んだ．3,4,5日に実家に帰り，何やかやあって死ぬほど飲み食いした記憶しかない．実家はPC環境が貧弱なので仕事もできず，ろくに遊べもしないので早々にアパートに戻る．
+いつもの河原で肉を焼く
+昨年恒例行事になっていた例の河原で肉を焼く会を6日にやった．その日は仕事だったので前日にささみ燻製を仕込み，仕事終わりに急いで駆けつけた．しばらく使ってなかった網が錆びてたりしたけど，久しぶりに屋外でジュニアバーナー使ってウインナーゆでたり，ヤシガラ成形炭（通称課金アイテム）を使って肉を焼くのは楽しかった．ヤシガラだけでもかなり焼けるから普通に楽でいいと思った．あとなんかジップロックみたいなので炊くご飯とか丸型飯盒で炊飯チャレンジしてたけどことごとく失敗してたのでまたやりたい．
+焚き火も楽しい
+    最初の火の炉 @yakisovaが投稿した写真 - 2016  5月 6 4:53午前 PDT
+
+
+インスタの埋め込みコードクソ長いな
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/05/10/life02/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
 </article>
 
 
@@ -87,67 +210,76 @@
 
   <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-05-09T11:51:00.000Z"><a href="/2016/05/09/gbfex01/">2016-05-09</a></time>
-      
-      
   
-    <h1 class="title"><a href="/2016/05/09/gbfex01/">気づいたら団長になってた話</a></h1>
+    <div class="post-content-index">
   
-
-    </header>
-    <div class="entry">
       
-        <h3 id="気づいたら団長になってた"><a href="#気づいたら団長になってた" class="headerlink" title="気づいたら団長になってた"></a>気づいたら団長になってた</h3><hr>
-<p>古戦場勝ち越しを目標にしている我が団だが，先日の古戦場，2勝2敗で迎えた最終日に見事惨敗し負け越し．その後突然団長が辞意を表明し退団，その後古参メンバー10名を差し置いて何故か自分に団長が回ってきた．</p>
-<h3 id="経緯"><a href="#経緯" class="headerlink" title="経緯"></a>経緯</h3><hr>
-<p>2勝2敗出迎えた最終日の朝7時30分，相手は同格ということで団長が戦うかどうか意見を仰ぐ．我が団は勝ち越しを目標にしているため，戦う以外の選択肢はないはずだが，とりあえず自分は（前日早期撤退のおかげで肉をたくさん確保していたので）戦うと意思表示．他の団員はほぼ発言なし（1名のみ）．寝坊かな？</p>
-<p>団長は走ることを決定し号令，この日の日中はタイヤ交換（スタッドレスからノーマルへ履き替え）をしなければいけないため午前中で可能な限り稼いでおきたいと考え全力疾走．相手も同じことを考えていたようで午前中からかなりハイペースでの戦いとなっていたが，どうにも我が団の伸びが悪いと感じながらまずは1億積む．</p>
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">1億稼いだので各位よろしくお願いします <a href="https://t.co/zSlLfbO7rl" target="_blank" rel="external">pic.twitter.com/zSlLfbO7rl</a></p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/726603034214600704" target="_blank" rel="external">2016年5月1日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <header>
+          <div class="icon"></div>
+            
+    
+      <h1 class="title transition"><a href="/2016/05/09/gbfex01/">気づいたら団長になってた話</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2016-05-09T11:51:00.000Z">2016-05-09</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
 
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">うせやろ？ <a href="https://t.co/5HEmkIHz5b" target="_blank" rel="external">pic.twitter.com/5HEmkIHz5b</a></p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/726603123192516608" target="_blank" rel="external">2016年5月1日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+                  <a href="/" target="_blank">IwateBison</a>
 
-<p>時間になったのでタイヤ交換へ，それなりの待ち時間を肉稼ぎで潰し，急いで家に帰る．</p>
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">帰宅！古戦場走るぞ！</p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/726668122560688128" target="_blank" rel="external">2016年5月1日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
 
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">なにこれ？ <a href="https://t.co/JCQVoSItil" target="_blank" rel="external">pic.twitter.com/JCQVoSItil</a></p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/726668194971164672" target="_blank" rel="external">2016年5月1日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
 
-<p>2億差でも団茶はぴくりとも動かない．誰もいねえ．<br>それでも18時以降団員が帰ってくることを信じてとにかく走っていたが，続々帰宅してきた団員が続々2億差に萎え，21時，ようやく帰ってきた団長からの撤退宣言で今回の古戦場は終わり．</p>
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">団イベお疲れ様でした <a href="https://t.co/a034q5fnPj" target="_blank" rel="external">pic.twitter.com/a034q5fnPj</a></p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/726788535735357444" target="_blank" rel="external">2016年5月1日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="und" dir="ltr">25% <a href="https://t.co/WI2QDoPCJj" target="_blank" rel="external">pic.twitter.com/WI2QDoPCJj</a></p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/726789027966242816" target="_blank" rel="external">2016年5月1日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>虚無</p>
-<p>その後団長は古戦場走らない団に行くと言い出して出て行った．なんでだ．</p>
-<h3 id="ケジメ"><a href="#ケジメ" class="headerlink" title="ケジメ"></a>ケジメ</h3><hr>
-<p>それでなぜか自分に団長が回ってきたわけだが，まずもって団員の向いている方向がバラバラなので指揮しようがない．（負け越しでもいい派と勝ち越しこだわる派と本戦出場で満足派で半分，あと無言派）</p>
-<p>なので，古戦場の基本的な方針を固めることをまず行った．<br>・大雑把なスケジュール把握（メイン時間帯）<br>・肉数の把握はナシ（ノルマ化を嫌う）<br>・格上相手には即撤退（見えている十天数，クラス4数，ランク数である程度定量化）<br>・勝ち越しにこだわらない（！）<br>・HELLナシで1億差ついたら撤退<br>うちの団は1億捲るのも躊躇するのだ．<br>これらの方針で，団長（忙しい日は副団長）がやるかどうか決める．</p>
-<p>という基礎を決めて周知した．これで自分が団長やめても大丈夫だと思う．<br>この話し合いしてる時も古参はほぼ無言で，話し合い中にマグナ救援を団に流す人すらいた．さすがに愛想が尽きたのでケジメ．</p>
-<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ケジメしたらすぐに向かいます <a href="https://t.co/W1Vcv0B85H" target="_blank" rel="external">pic.twitter.com/W1Vcv0B85H</a></p>&mdash; イワテバイソン (@IwateBison) <a href="https://twitter.com/IwateBison/status/728622538092249090" target="_blank" rel="external">2016年5月6日</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>来週辞める．</p>
-<p>他にもニルヴァーナ製作とか母の日の話とかブログのテーマの話とかGWの話とかBBQの話とか研究の話とかラズパイの話とかいろいろあるのでまた書く</p>
-
+                <a href="/2016/05/09/gbfex01/#ds-thread"><span class="ds-thread-count" data-thread-key="2016/05/09/gbfex01/" data-count-type="comments"></span></a>
+              
+          </ul>
+        </header>
       
+      <div class="entry">
+        
+          
+            気づいたら団長になってた
+古戦場勝ち越しを目標にしている我が団だが，先日の古戦場，2勝2敗で迎えた最終日に見事惨敗し負け越し．その後突然団長が辞意を表明し退団，その後古参メンバー10名を差し置いて何故か自分に団長が回ってきた．
+経緯
+2勝2敗出迎えた最終日の朝7時30分，相手は同格ということで団長が戦うかどうか意見を仰ぐ．我が団は勝ち越しを目標にしているため，戦う以外の選択肢はないはずだが，とりあえず自分は（前日早期撤退のおかげで肉をたくさん確保していたので）戦うと意思表示．他の団員はほぼ発言なし（1名のみ）．寝坊かな？
+団長は走ることを決定し号令，この日の日中はタイヤ交換（スタッドレスからノーマルへ履き替え）をしなければいけないため午前中で可能な限り稼いでおきたいと考え全力疾走．相手も同じことを考えていたようで午前中からかなりハイペースでの戦いとなっていたが，どうにも我が団の伸びが悪いと感じながらまずは1億積む．
+1億稼いだので各位よろしくお願いします pic.twitter.com/zSlLfbO7rl&amp;mdash; イワテバイソン (@IwateBison) 2016年5月1日
+
+
+うせやろ？ pic.twitter.com/5HEmkIHz5b&amp;mdash; イワテバイソン (@IwateBison) 2016年5月1日
+
+
+時間になったのでタイヤ交換へ，それなりの待ち時間を肉稼ぎで潰し，急いで家に帰る．
+帰宅！古戦場走るぞ！&amp;mdash; イワテバイソン (@IwateBison) 2016年5月1日
+
+
+なにこれ？ pic.twitter.com/JCQVoSItil&amp;mdash; イワテバイソン (@IwateBison) 2016年5月1日
+
+
+2億差でも団茶はぴくりとも動かない．誰もいねえ．それでも18時以降団員が帰ってくることを信じてとにかく走っていたが
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/05/09/gbfex01/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
 </article>
 
 
@@ -155,43 +287,68 @@
 
   <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-04-24T15:10:27.000Z"><a href="/2016/04/25/gbf02/">2016-04-25</a></time>
-      
-      
   
-    <h1 class="title"><a href="/2016/04/25/gbf02/">グラブルの話2</a></h1>
+    <div class="post-content-index">
   
-
-    </header>
-    <div class="entry">
       
-        <h3 id="ニオちゃん"><a href="#ニオちゃん" class="headerlink" title="ニオちゃん"></a>ニオちゃん</h3><hr>
-<p>まじめに製作にとりかかったのが今月の6日だった．</p>
-<p><img src="https://pbs.twimg.com/media/CgyO2uSVEAARn5W.jpg" alt=""><br><img src="https://pbs.twimg.com/media/CgyO5qgUYAADGHQ.jpg" alt=""></p>
-<p>かわいい<br>戦闘立ち絵もいいけどイベント中のポカーン顔の立ち絵も好き</p>
-<p>明日からの風有利古戦場に間に合ってよかった．</p>
-<p><img src="https://pbs.twimg.com/media/CgyRr85VEAAlY2E.jpg" alt="はやくこれになりたい"></p>
-<h3 id="十天素材"><a href="#十天素材" class="headerlink" title="十天素材"></a>十天素材</h3><hr>
-<p>オルディネとか古代布とかは心を無にして周回するだけなのであんまり苦ではなかった．<br>苦労したのはNアニマ100と虹星晶450，あとはやっぱり碧空70．共闘デイリーかなりサボってたので製作開始時20くらいしかなくてやばかった．</p>
-<p>Nアニマは毎日の島N島Hの消化と，半額期間だったので見かけたら救援入ってMVPもらって稼いだ．ここかトレジャー交換しか手段がないのである意味サボってると一番きつい．要求が100と多い上に，キャラ解放でも消費する．</p>
-<p>虹星晶は製作開始時点では200だけだったと思う．キャラ解放に無意識に使ってしまっていたっぽい．木曜VHで稼ごうとしたがマジで集まらなかった．倉庫に眠ってたイベSSR石を砕いてまとまった数を確保した．最後はダブってたネプチューンを砕いてフィニッシュ．なんかの効果で1回砕く毎に1個追加ボーナスついてたので，思ったより楽だった．使う予定のないイベ石は可能な限り凸らずに保管しておくか，即砕くぐらいでいいかもしれない．金は共闘とか四象で何とかする．</p>
-<p>碧空は普通にやってたら1日1個なので，製作開始時からの碧空の残り必要数がそのままできるまでの日数だと言われてた．残り必要数50くらいだったので，本来は2ヶ月位かかるはずだったけど，1ヶ月かからなかった．<br>割と力技だったけど，とりあえずデイリー共闘と今のイベ報酬で毎日2つ，更に御石を全部碧空に変換して13個確保，残りはグランデ救援でドロップを狙った．<br>ツイ検索では競争率が高すぎて無理だったので，いろんな掲示板に張り付いて救援入ってた．一番競争率低いのがwikiのマルチ募集版のやつで，大体1時間に2〜3回募集あって5分以内に気づけばそれなりに入れた．集合知<br>グランデは結構2個とか碧空落としてくれる上，難易度もあまり高くない．ただ，土日ほぼ張り付いてたのでなんもできんかった．この辺は在りし日のMMORPG黎明期っぽい体験だった．</p>
-<p>二天目を目指すことも考えると，デイリー制限素材だけは毎日ちゃんとやっておいたほうがいい．特にNアニマ．</p>
+        <header>
+          <div class="icon"></div>
+            
+    
+      <h1 class="title transition"><a href="/2016/04/25/gbf02/">グラブルの話2</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2016-04-24T15:10:27.000Z">2016-04-25</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
 
+                
+                  <a href="/" target="_blank">IwateBison</a>
+
+                
+
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
+
+                <a href="/2016/04/25/gbf02/#ds-thread"><span class="ds-thread-count" data-thread-key="2016/04/25/gbf02/" data-count-type="comments"></span></a>
+              
+          </ul>
+        </header>
       
+      <div class="entry">
+        
+          
+            ニオちゃん
+まじめに製作にとりかかったのが今月の6日だった．
+
+かわいい戦闘立ち絵もいいけどイベント中のポカーン顔の立ち絵も好き
+明日からの風有利古戦場に間に合ってよかった．
+
+十天素材
+オルディネとか古代布とかは心を無にして周回するだけなのであんまり苦ではなかった．苦労したのはNアニマ100と虹星晶450，あとはやっぱり碧空70．共闘デイリーかなりサボってたので製作開始時20くらいしかなくてやばかった．
+Nアニマは毎日の島N島Hの消化と，半額期間だったので見かけたら救援入ってMVPもらって稼いだ．ここかトレジャー交換しか手段がないのである意味サボってると一番きつい．要求が100と多い上に，キャラ解放でも消費する．
+虹星晶は製作開始時点では200だけだったと思う．キャラ解放に無意識に使ってしまっていたっぽい．木曜VHで稼ごうとしたがマジで集まらなかった．倉庫に眠ってたイベSSR石を砕いてまとまった数を確保した．最後はダブってたネプチューンを砕いてフィニッシュ．なんかの効果で1回砕く毎に1個追加ボーナスついてたので，思ったより楽だった．使う予定のないイベ石は可能な限り凸らずに保管しておくか，即砕くぐらいでいいかもしれない．金は共闘とか四象で何とかする．
+碧空は普通にやってたら1日1個なので，製作開始時からの碧空の残り必要数がそのままできるまでの日数だと言われてた．残り必要数50くらいだったので，本来は2ヶ月位かかるはずだったけど，1ヶ月かからなかった．割と力技だったけど，とりあえずデイリー共闘と今のイベ報酬で毎日2つ，更に御石を全部碧空に変換して13個確保，残りはグランデ救援でドロップを狙った．ツイ検索では競争率が高すぎて無理だったので，いろんな掲示板に張り付いて救援入ってた．一番競争率低いのがwikiのマルチ募集版のやつで，大体1時間に2〜3回募集あって5分以内に気づけばそ
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/04/25/gbf02/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
 </article>
 
 
@@ -199,43 +356,69 @@
 
   <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-04-22T10:11:54.000Z"><a href="/2016/04/22/life01/">2016-04-22</a></time>
-      
-      
   
-    <h1 class="title"><a href="/2016/04/22/life01/">生活リズム改善の話</a></h1>
+    <div class="post-content-index">
   
-
-    </header>
-    <div class="entry">
       
-        <h3 id="早寝早起き"><a href="#早寝早起き" class="headerlink" title="早寝早起き"></a>早寝早起き</h3><hr>
-<p>職場が新しくなってから具体的な勤務時間が確定して1週間たった．<br>前までは裁量労働だったので好きな時間に来て好きな時間に帰れたけど<br>今年度からは8時半〜17時と定められたので迂闊に夜ふかしできなくなった．</p>
-<p>睡眠時間は7時間必要なので，大体23時に寝て6時半には起きるようになった．<br>夜20時以降になんか食うとねれなくなるのとたくさん食うとねれなくなる．<br>ので夜めしは控えめになった．ちゃんと寝るとちゃんと起きれるようだ．</p>
-<p>まず今週は毎日8時前に出勤して定時退社する感じができたのでよかった．<br>8時から10時くらいまでの仕事が一番捗る（邪魔が少ない）．</p>
-<p>感覚として，出社時間に厳しくするなら退社時間も厳しくしろよと思う．<br>なんとなくどこも出社時間に厳しい割に退社時間にルーズすぎるし，<br>退社時間がルーズなら朝の時間もルーズでいいだろと思う．<br>なので全部コアタイム制にしてほしい．</p>
-<h3 id="コルワちゃん"><a href="#コルワちゃん" class="headerlink" title="コルワちゃん"></a>コルワちゃん</h3><hr>
-<p>今日は実装がうまく行かなかったので結構グラブルのこと考えてた．</p>
-<p>壊れ性能で出してSNSで拡散させて十分ガチャ回させたタイミングで<br>弱体入れて石返金って悪意しか感じないけど，お前どう？</p>
-<blockquote><p>「コルワ」は、現在のゲームの中に登場するキャラの中でも「サポート役」に特化した能力を有しています。<br>これは昨今、武器や召喚石による能力アップが中心となっている中、キャラにその役割を与え、武器や召喚石に別の役割を与えられる余幅を持ちたいという運営の意図があり、今回の実装に至りました。</p>
-<footer><strong>グラブル最新情報</strong><cite><a href="http://granbluefantasy.jp/pages/?p=7694" target="_blank" rel="external">URL</a></cite></footer></blockquote>
-<h6 id="なんか引用が変な感じになる．HEXOで引用するときのマークダウン記法誰かおシエテ"><a href="#なんか引用が変な感じになる．HEXOで引用するときのマークダウン記法誰かおシエテ" class="headerlink" title="なんか引用が変な感じになる．HEXOで引用するときのマークダウン記法誰かおシエテ"></a>なんか引用が変な感じになる．HEXOで引用するときのマークダウン記法誰かおシエテ</h6><p>石や武器に代わる補助効果ってコンセプトで実装するつもりだったなら別にバフ半永続でも良かったと思う．<br>というか適当な調整で3アビが死んでコンセプトもガタガタになってんのがやだ　キャラを殺すな　ハレゼナちゃんかえして</p>
-<p>あとニオちゃんGW明けくらいにもらえると思う</p>
+        <header>
+          <div class="icon"></div>
+            
+    
+      <h1 class="title transition"><a href="/2016/04/22/life01/">生活リズム改善の話</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2016-04-22T10:11:54.000Z">2016-04-22</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
 
+                
+                  <a href="/" target="_blank">IwateBison</a>
+
+                
+
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
+
+                <a href="/2016/04/22/life01/#ds-thread"><span class="ds-thread-count" data-thread-key="2016/04/22/life01/" data-count-type="comments"></span></a>
+              
+          </ul>
+        </header>
       
+      <div class="entry">
+        
+          
+            早寝早起き
+職場が新しくなってから具体的な勤務時間が確定して1週間たった．前までは裁量労働だったので好きな時間に来て好きな時間に帰れたけど今年度からは8時半〜17時と定められたので迂闊に夜ふかしできなくなった．
+睡眠時間は7時間必要なので，大体23時に寝て6時半には起きるようになった．夜20時以降になんか食うとねれなくなるのとたくさん食うとねれなくなる．ので夜めしは控えめになった．ちゃんと寝るとちゃんと起きれるようだ．
+まず今週は毎日8時前に出勤して定時退社する感じができたのでよかった．8時から10時くらいまでの仕事が一番捗る（邪魔が少ない）．
+感覚として，出社時間に厳しくするなら退社時間も厳しくしろよと思う．なんとなくどこも出社時間に厳しい割に退社時間にルーズすぎるし，退社時間がルーズなら朝の時間もルーズでいいだろと思う．なので全部コアタイム制にしてほしい．
+コルワちゃん
+今日は実装がうまく行かなかったので結構グラブルのこと考えてた．
+壊れ性能で出してSNSで拡散させて十分ガチャ回させたタイミングで弱体入れて石返金って悪意しか感じないけど，お前どう？
+「コルワ」は、現在のゲームの中に登場するキャラの中でも「サポート役」に特化した能力を有しています。これは昨今、武器や召喚石による能力アップが中心となっている中、キャラにその役割を与え、武器や召喚石に別の役割を与えられる余幅を持ちたいという運営の意図があり、今回の実装に至りました。
+グラブル最新情報URL
+なんか引用が変な感じになる．HEXOで引用するときのマークダウン記法誰かおシエテ石や武器に代わる補助効果ってコンセプトで実装するつもりだったなら別にバフ半永続でも良かったと思う．というか適当な調整で3アビが死んでコンセプトもガタガタになってんのがやだ　キャラを殺すな　ハレゼナちゃんかえして
+あとニオちゃんGW明けくらいにもら
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/04/22/life01/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
 </article>
 
 
@@ -243,42 +426,68 @@
 
   <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-04-21T08:56:54.000Z"><a href="/2016/04/21/gbf01/">2016-04-21</a></time>
-      
-      
   
-    <h1 class="title"><a href="/2016/04/21/gbf01/">グラブルの話</a></h1>
+    <div class="post-content-index">
   
-
-    </header>
-    <div class="entry">
       
-        <h3 id="コルワちゃんこわれる"><a href="#コルワちゃんこわれる" class="headerlink" title="コルワちゃんこわれる"></a>コルワちゃんこわれる</h3><hr>
-<p>いっぱいかなしい</p>
-<p><img src="https://pbs.twimg.com/media/Cgi01XFUYAAUgjf.jpg" alt="もう一回天井叩けるドン"></p>
-<p>コルワちゃんnerf食らったあとでもわりと使える，半永久バフみたいなことは難しくなったけど<br>奥義毎に3~5ターンくらいの強力なバフを撒ける．<br>1アビ2アビで忙しくて3アビ併用は難しいので状況に応じて切り替えるとかそんな感じ</p>
-<h3 id="ガバ運営"><a href="#ガバ運営" class="headerlink" title="ガバ運営"></a>ガバ運営</h3><hr>
-<p>想定より強すぎました　弱くします　石で補填します</p>
-<p>ハレゼナちゃんとコルワちゃんはこの短期間で同じ調整の犠牲に<br>（ハレゼナちゃんは最強キャラから産廃にまで落とされた）</p>
-<p>どっちの「不具合」もちょっとテストプレイすれば分かりそうなんだけどな<br>炎上商法だとしても得られた利益と引き換えに信用失ってる気がする</p>
-<h3 id="石返金期待ガチャ"><a href="#石返金期待ガチャ" class="headerlink" title="石返金期待ガチャ"></a>石返金期待ガチャ</h3><hr>
-<p>ハレゼナ事件で即弱体は石全額返金って前例作っちゃったから<br>「壊れキャラが実装されたらとりあえず回せばあとで石もらえる」みたいな考え方が広まった．<br>多分今回のコルワガチャは壊れキャラと判明してからかなり回されたと思われる．<br>（実際自分も見てから天井まで回した）<br>誰かが「闇の射幸心」と言ってたけどそんな感じだと思った．人間は射幸心に抗えない</p>
-<p>余談だがハレゼナ事件では運営は2時間弱で修正予告を出し，<br>その告知時点までの課金額を石返金する措置を取った．<br>一方今回のコルワ事件では実装17時間後（！）に修正予告を出し，<br>緊急メンテを経て弱体を実施，メンテ直前までの課金額を石返金した．<br>どちらもメンテ以外ではガチャ排出を1秒たりとも止めずに告知のみが出されていたが，<br>もしかしてガチャだけを止める機能が実装されてないのだろうか．</p>
+        <header>
+          <div class="icon"></div>
+            
+    
+      <h1 class="title transition"><a href="/2016/04/21/gbf01/">グラブルの話</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2016-04-21T08:56:54.000Z">2016-04-21</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
 
+                
+                  <a href="/" target="_blank">IwateBison</a>
+
+                
+
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
+
+                <a href="/2016/04/21/gbf01/#ds-thread"><span class="ds-thread-count" data-thread-key="2016/04/21/gbf01/" data-count-type="comments"></span></a>
+              
+          </ul>
+        </header>
       
+      <div class="entry">
+        
+          
+            コルワちゃんこわれる
+いっぱいかなしい
+
+コルワちゃんnerf食らったあとでもわりと使える，半永久バフみたいなことは難しくなったけど奥義毎に3~5ターンくらいの強力なバフを撒ける．1アビ2アビで忙しくて3アビ併用は難しいので状況に応じて切り替えるとかそんな感じ
+ガバ運営
+想定より強すぎました　弱くします　石で補填します
+ハレゼナちゃんとコルワちゃんはこの短期間で同じ調整の犠牲に（ハレゼナちゃんは最強キャラから産廃にまで落とされた）
+どっちの「不具合」もちょっとテストプレイすれば分かりそうなんだけどな炎上商法だとしても得られた利益と引き換えに信用失ってる気がする
+石返金期待ガチャ
+ハレゼナ事件で即弱体は石全額返金って前例作っちゃったから「壊れキャラが実装されたらとりあえず回せばあとで石もらえる」みたいな考え方が広まった．多分今回のコルワガチャは壊れキャラと判明してからかなり回されたと思われる．（実際自分も見てから天井まで回した）誰かが「闇の射幸心」と言ってたけどそんな感じだと思った．人間は射幸心に抗えない
+余談だがハレゼナ事件では運営は2時間弱で修正予告を出し，その告知時点までの課金額を石返金する措置を取った．一方今回のコルワ事件では実装17時間後（！）に修正予告を出し，緊急メンテを経て弱体を実施，メンテ直前までの課金額を石返金した．どちらもメンテ以外ではガチャ排出を1秒たりとも止めずに告知のみが出されていたが，もしかしてガチャだけを止める機能が実装されてないのだろうか．
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/04/21/gbf01/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
 </article>
 
 
@@ -286,37 +495,63 @@
 
   <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-04-20T07:49:40.000Z"><a href="/2016/04/20/md1/">2016-04-20</a></time>
-      
-      
   
-    <h1 class="title"><a href="/2016/04/20/md1/">マークダウン形式で書く</a></h1>
+    <div class="post-content-index">
   
-
-    </header>
-    <div class="entry">
       
-        <h3 id="md練習"><a href="#md練習" class="headerlink" title=".md練習"></a>.md練習</h3><hr>
-<p>書き味としてはTeXに近い<br>多少独特だけどHTML生で書くより楽にかける<br>コードを埋め込むときとか便利</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">puts &apos;hogehoge.&apos;</span><br></pre></td></tr></table></figure>
-<p>インラインとかもできる</p>
-<p><code>puts &#39;@iwatebison&#39;</code>は<a href="http://twitter.com/iwatebison" title="iwatebison" target="_blank" rel="external">@iwatebison</a></p>
-<p>すごい</p>
+        <header>
+          <div class="icon"></div>
+            
+    
+      <h1 class="title transition"><a href="/2016/04/20/md1/">マークダウン形式で書く</a></h1>
+    
+  
+          <ul>
+            <li>
+              <span class="heading-span">Posted on: </span>
+              <time datetime="2016-04-20T07:49:40.000Z">2016-04-20</time>
+            </li>
+            
+              <li>
+                <span class="heading-span">By: </span>
 
+                
+                  <a href="/" target="_blank">IwateBison</a>
+
+                
+
+              </li>
+            
+            <li>
+              <span class="heading-span">With: </span>
+              
+
+                <a href="/2016/04/20/md1/#ds-thread"><span class="ds-thread-count" data-thread-key="2016/04/20/md1/" data-count-type="comments"></span></a>
+              
+          </ul>
+        </header>
       
+      <div class="entry">
+        
+          
+            .md練習
+書き味としてはTeXに近い多少独特だけどHTML生で書くより楽にかけるコードを埋め込むときとか便利
+1puts &amp;apos;hogehoge.&amp;apos;
+インラインとかもできる
+puts &amp;#39;@iwatebison&amp;#39;は@iwatebison
+すごい
+          
+        
+      </div>
+      <footer>
+        
+          <div class="alignright">
+            <a href="/2016/04/20/md1/#more" class="more-link">Continue Reading<i class="fa fa-long-arrow-right fa-1"></i></a>
+          </div>
+        
+        <div class="clearfix"></div>
+      </footer>
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
 </article>
 
 
@@ -328,56 +563,136 @@
   
   <div class="clearfix"></div>
 </nav></div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
+    <aside id="sidebar" class="alignright"><div class="padding">
+	
+	  <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" autocomplete="off" name="q" maxlength="20" results="0" placeholder="Suche">
     <input type="hidden" name="q" value="site:iwatebison.github.io">
   </form>
 </div>
-
-  
-
-  
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
+	
+	  
+	
+	  
+<div class="widget recent-post">
+  <h3 class="title">Neueste Artikel</h3>
   <ul class="entry">
-  
-    <li><a href="/tags/game/">game</a><small>3</small></li>
-  
-    <li><a href="/tags/gbf/">gbf</a><small>4</small></li>
-  
-    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
-  
-    <li><a href="/tags/life/">life</a><small>2</small></li>
-  
-    <li><a href="/tags/tec/">tec</a><small>1</small></li>
-  
+    
+      <li>
+        <a href="/2016/05/10/life02/">BBQした話</a>
+      </li>
+    
+      <li>
+        <a href="/2016/05/09/gbfex01/">気づいたら団長になってた話</a>
+      </li>
+    
+      <li>
+        <a href="/2016/04/25/gbf02/">グラブルの話2</a>
+      </li>
+    
+      <li>
+        <a href="/2016/04/22/life01/">生活リズム改善の話</a>
+      </li>
+    
+      <li>
+        <a href="/2016/04/21/gbf01/">グラブルの話</a>
+      </li>
+    
   </ul>
 </div>
 
-</aside>
+	
+	  
+<div class="widget tagcloud">
+  <h3 class="title">Tag-Cloud</h3>
+  <div class="entry">
+    <a href="/tags/game/" style="font-size: 16.67px;">game</a> <a href="/tags/gbf/" style="font-size: 20px;">gbf</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/life/" style="font-size: 13.33px;">life</a> <a href="/tags/tec/" style="font-size: 10px;">tec</a>
+  </div>
+</div>
+
+	
+	  <iframe width="100%" height="120" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=10&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5594792135&verifier=676ff25e&dpc=1"></iframe>
+	
+	  <div class="widget category">
+	<h3 class="title">Link</h3>
+	<ul class="entry">
+		
+        	<li><a href="https://www.google.com/">Google</a></li>
+      	
+        	<li><a href="https://github.com/">Github</a></li>
+      	
+        	<li><a href="http://hijiangtao.github.io/">hijiangtao</a></li>
+      	
+	</ul>
+</div>
+	
+</div></aside>
     <div class="clearfix"></div>
   </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2016 IwateBison
-  
+  <footer id="footer" class="inner"><div class="padding">
+	<div class="alignleft">
+	  
+	  Copyright&copy;2013-2016 <a href=" / ">IwateBison</a>
+	  
+	  | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	  and Theme by <a href="https://github.com/hijiangtao/dark-tech/" target="_blank">Dark-Tech</a> | <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000257487'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1000257487' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+
+	<div class="alignright">
+		
+		
+			<a href="https://github.com/https://github.com/hijiangtao" target="_blank" title="IwateBison Github"><i class="fa fa-github-square"></i></a>	
+		
+		
+		
+			<a href="http://www.weibo.com/http://weibo.com/hijiangtao" target="_blank" title="IwateBison Weibo"><i class="fa fa-weibo"></i></a>	
+		
+		
+		
+		
+			<a href="/dark-tech/atom.xml" target="_blank" title="IwateBison RSS"><i class="fa fa-rss-square"></i></a>
+		
+	</div>
+
+	<div class="clearfix"></div>
 </div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
+
+<div class="scroll-top"><i class="fa fa-arrow-circle-up"></i></div></footer>
+  
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"datablog"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>
 <script src="/js/gallery.js"></script>
 
 
 
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+$(window).scroll(function() {
+
+    if($(this).scrollTop() > 400) {
+        $('.scroll-top').fadeIn(200);
+    } else {
+        $('.scroll-top').fadeOut(200);
+    }
+});
+
+$('.scroll-top').bind('click', function(e) {
+    e.preventDefault();
+    $('body,html').animate({scrollTop:0},200);
+});
 </script>
 
 </body>
