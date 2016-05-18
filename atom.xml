@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iwatebison.github.io/"/>
-  <updated>2016-05-18T04:27:12.000Z</updated>
+  <updated>2016-05-18T04:54:35.000Z</updated>
   <id>http://iwatebison.github.io/</id>
   
   <author>
@@ -16,11 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>画像アップロードの話</title>
+    <link href="http://iwatebison.github.io/2016/05/18/etc02/"/>
+    <id>http://iwatebison.github.io/2016/05/18/etc02/</id>
+    <published>2016-05-18T04:54:35.000Z</published>
+    <updated>2016-05-18T04:54:35.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;ブログに画像をアップロードしたい&quot;&gt;&lt;a href=&quot;#ブログに画像をアップロードしたい&quot; class=&quot;headerlink&quot; title=&quot;ブログに画像をアップロードしたい&quot;&gt;&lt;/a&gt;ブログに画像をアップロードしたい&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;ツイッターに既にアップした画像をブログに持ってくるのは，Twilogとかで適当にpost開いて画像の元URL(末尾に拡張子があるやつ)をコピーしてくれば簡単なんだけど，わざわざpostするほどの画像じゃない場合に簡略化が多少困ったのでメモる&lt;/p&gt; &lt;hr&gt; &lt;p&gt;1.Google DriveやOneDriveなどのクラウドストレージを試す&lt;/p&gt; &lt;p&gt;ダメだった&lt;/p&gt; &lt;p&gt;アップロードは簡単だし自動化もできるんだけど，肝心のファイル直リンができない．ファイル直リンができないと，URL末尾が拡張子でなくなるため，ブログ内の画像に適用されるLightBox（画像を押すとポップアップしてイイ感じに表示されるやつ）に認識されないため，気持ちが悪くなる&lt;/p&gt; &lt;hr&gt; &lt;p&gt;2.スマホからできることを試す&lt;/p&gt; &lt;p&gt;そもそも，写真をアップロードするのがたいていスマートホンで撮った場合なので，スマホからシームレスにアップロードしてURL取得って流れにしたい．なので，スマホのギャラリー機能から飛べる共有機能を探した．&lt;br&gt;で，その中にあるTwitterのダイレクトメッセージ機能が使えそうだと考えた．Twitterのダイレクトメッセージは，自分にも送信できるため，たまにメモの代わりに使っているのだが，ここに画像つけて送ってしまえばいいという発想だ．Twitterに上げたくない画像をアップするって話だったので，正直盲点だった．気づいてよかった．&lt;br&gt;ただ，Twitterにアップロードした画像のURLには，末尾に大きさを変更する&lt;code&gt;:Large&lt;/code&gt;等のオプションが付いている場合があるので，ブログに持ってくる場合はこれを削っておく．&lt;/p&gt; &lt;hr&gt; &lt;p&gt;3.マークダウン記法以外で画像挿入&lt;/p&gt; &lt;p&gt;スマホで撮った写真はアホみたいにでかいので，リサイズしてページに貼り付けたいが，なぜかマークダウン記法では画像の大きさを指定できないらしい．なので，そのまま貼り付けるとクソでかくなって気持ちが悪くなる．今のところマークダウンでは解決できないっぽいので，画像の部分だけHTML imgタグで記述する．マークダウンは内部的にはHTMLの再翻訳みたいなものなので，mdにHTMLを書いても認識されるらしい．&lt;/p&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;img src=&amp;quot;画像のURL.jpg&amp;quot; width=&amp;quot;任意の幅px&amp;quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; &lt;p&gt;これで，スマホで写真撮ったら自分にDして元URLをコピーしてブログに貼り付けるってステップになったので楽．&lt;br&gt;LightBoxに適用されれば触って拡大してもわりといいかんじにリサイズしてくれるので楽．&lt;/p&gt; &lt;p&gt;おわり&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;ブログに画像をアップロードしたい&quot;&gt;&lt;a href=&quot;#ブログに画像をアップロードしたい&quot; class=&quot;headerlink&quot; title=&quot;ブログに画像をアップロードしたい&quot;&gt;&lt;/a&gt;ブログに画像をアップロードしたい&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;ツイッターに既にア
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://iwatebison.github.io/tags/hexo/"/>
+    
+      <category term="tec" scheme="http://iwatebison.github.io/tags/tec/"/>
+    
+  </entry>
+  
+  <entry>
     <title>そば弁当の話</title>
     <link href="http://iwatebison.github.io/2016/05/17/life04/"/>
     <id>http://iwatebison.github.io/2016/05/17/life04/</id>
     <published>2016-05-17T08:43:28.000Z</published>
-    <updated>2016-05-18T04:27:12.000Z</updated>
+    <updated>2016-05-18T04:50:38.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;そば弁当&quot;&gt;&lt;a href=&quot;#そば弁当&quot; class=&quot;headerlink&quot; title=&quot;そば弁当&quot;&gt;&lt;/a&gt;そば弁当&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;このブログの人が開発したべんとうの話です→&lt;a href=&quot;http://cocolog-nifty.hatenablog.com/entry/2016/05/11/141434&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;蕎麦弁当を開発して毎日食べてます&lt;/a&gt;&lt;/p&gt; &lt;p&gt;そば弁当，めっちゃいい感じなので，開発者の人に感謝してる．めっちゃライフハック感ある．&lt;/p&gt; &lt;p&gt;前にも書いたが，10分位で出来て多分1食100円ちょっとのわりに，腹持ちがいいので間食も減りそう．あとおいしい．そばの種類や上にのせるねばねばしたやつや薬味の組み合わせである程度バリエーション作れそうなところも良い．&lt;/p&gt; &lt;p&gt;オリジナルのそば弁当はとろろとネギで食べるやつだったが，あいにくとろろも刻みネギも最寄りのスーパーにおいてないことがわかったので，バリエーションとして自分はめかぶとかいわれ大根でやってみている．&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;https://ton.twitter.com/i/ton/data/dm/732788109855891459/732788109881057281/UyV0lRbD.jpg&quot; width=&quot;320px&quot;&gt;&lt;/p&gt; &lt;p&gt;そこそこウマそうに見える．&lt;/p&gt; &lt;p&gt;これもゆでたそばを突っ込んで凍らせておいためかぶを乗せ，かいわれを入れるだけで完成する．&lt;br&gt;サーモスジャーの保冷力により，朝8時に入れためかぶが昼12時になっても半分溶けずにカチカチになってたのは面食らったが，そばつゆをぶっかけてガシガシ突き崩してガチャガチャ混ぜれば丁度良い冷たさのそば弁当を食べることができる．最高．&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;https://ton.twitter.com/i/ton/data/dm/732787957338365955/732787957359333378/mC8E1ZBT.jpg&quot; width=&quot;320px&quot;&gt;&lt;/p&gt; &lt;p&gt;こんな感じにズルズルになるが，めかぶの磯の香りとかいわれ大根の風味でかなりウマいことになっている．最高．&lt;/p&gt; &lt;p&gt;やはり多少そばが伸びてしまうので，ごまかすためにネバネバ系のトッピングが相性がいいと思われる．&lt;br&gt;まあとろろとめかぶ以外では，とろろ昆布くらいしか思いつかない．薬味は生姜とかわさびとかノリとかいろいろやれそう．かいわれ大根が形状的にも風味的にも価格的にもめっちゃ相性がいいと思うので，しばらくはかいわれめかぶそば弁当を食べまくる．&lt;/p&gt; &lt;p&gt;あと，洗い物がかなり楽なのもポイントで，油を一切使わないので洗剤ほとんど使わずに洗える．そば弁当は作るときもゆでた鍋とざるをザブザブ洗えば終わりだし，食べたあとも職場の流しでジャーをザブザブ洗って乾かしておける．最高．&lt;/p&gt; &lt;p&gt;あまりに美味しいので，今日は弁当作りを優先した結果遅刻した．&lt;/p&gt; &lt;p&gt;おわり&lt;/p&gt;</content>
     
@@ -75,9 +97,9 @@
     
       <category term="life" scheme="http://iwatebison.github.io/tags/life/"/>
     
-      <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
-    
       <category term="twitter" scheme="http://iwatebison.github.io/tags/twitter/"/>
+    
+      <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
     
   </entry>
   

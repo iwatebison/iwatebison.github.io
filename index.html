@@ -50,6 +50,38 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-05-18T04:54:35.000Z"><a href="/2016/05/18/etc02/">2016-05-18</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/05/18/etc02/">画像アップロードの話</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="ブログに画像をアップロードしたい"><a href="#ブログに画像をアップロードしたい" class="headerlink" title="ブログに画像をアップロードしたい"></a>ブログに画像をアップロードしたい</h3><hr> <p>ツイッターに既にアップした画像をブログに持ってくるのは，Twilogとかで適当にpost開いて画像の元URL(末尾に拡張子があるやつ)をコピーしてくれば簡単なんだけど，わざわざpostするほどの画像じゃない場合に簡略化が多少困ったのでメモる</p> <hr> <p>1.Google DriveやOneDriveなどのクラウドストレージを試す</p> <p>ダメだった</p> <p>アップロードは簡単だし自動化もできるんだけど，肝心のファイル直リンができない．ファイル直リンができないと，URL末尾が拡張子でなくなるため，ブログ内の画像に適用されるLightBox（画像を押すとポップアップしてイイ感じに表示されるやつ）に認識されないため，気持ちが悪くなる</p> <hr> <p>2.スマホからできることを試す</p> <p>そもそも，写真をアップロードするのがたいていスマートホンで撮った場合なので，スマホからシームレスにアップロードしてURL取得って流れにしたい．なので，スマホのギャラリー機能から飛べる共有機能を探した．<br>で，その中にあるTwitterのダイレクトメッセージ機能が使えそうだと考えた．Twitterのダイレクトメッセージは，自分にも送信できるため，たまにメモの代わりに使っているのだが，ここに画像つけて送ってしまえばいいという発想だ．Twitterに上げたくない画像をアップするって話だったので，正直盲点だった．気づいてよかった．<br>ただ，Twitterにアップロードした画像のURLには，末尾に大きさを変更する<code>:Large</code>等のオプションが付いている場合があるので，ブログに持ってくる場合はこれを削っておく．</p> <hr> <p>3.マークダウン記法以外で画像挿入</p> <p>スマホで撮った写真はアホみたいにでかいので，リサイズしてページに貼り付けたいが，なぜかマークダウン記法では画像の大きさを指定できないらしい．なので，そのまま貼り付けるとクソでかくなって気持ちが悪くなる．今のところマークダウンでは解決できないっぽいので，画像の部分だけHTML imgタグで記述する．マークダウンは内部的にはHTMLの再翻訳みたいなものなので，mdにHTMLを書いても認識されるらしい．</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;画像のURL.jpg&quot; width=&quot;任意の幅px&quot; /&gt;</span><br></pre></td></tr></table></figure> <p>これで，スマホで写真撮ったら自分にDして元URLをコピーしてブログに貼り付けるってステップになったので楽．<br>LightBoxに適用されれば触って拡大してもわりといいかんじにリサイズしてくれるので楽．</p> <p>おわり</p>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-05-17T08:43:28.000Z"><a href="/2016/05/17/life04/">2016-05-17</a></time>
       
       
@@ -332,41 +364,11 @@
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-04-20T07:49:40.000Z"><a href="/2016/04/20/md1/">2016-04-20</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/04/20/md1/">マークダウン形式で書く</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h3 id="md練習"><a href="#md練習" class="headerlink" title=".md練習"></a>.md練習</h3><hr> <p>書き味としてはTeXに近い<br>多少独特だけどHTML生で書くより楽にかける<br>コードを埋め込むときとか便利</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">puts &apos;hogehoge.&apos;</span><br></pre></td></tr></table></figure> <p>インラインとかもできる</p> <p><code>puts &#39;@iwatebison&#39;</code>は<a href="http://twitter.com/iwatebison" title="iwatebison" target="_blank" rel="external">@iwatebison</a></p> <p>すごい</p>
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
 
 <nav id="pagination">
   
+  
+    <a href="/page/2/" class="alignright next">Nächste Seite</a>
   
   <div class="clearfix"></div>
 </nav></div></div>
@@ -389,11 +391,11 @@
   
     <li><a href="/tags/gbf/">gbf</a><small>7</small></li>
   
-    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+    <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
   
     <li><a href="/tags/life/">life</a><small>6</small></li>
   
-    <li><a href="/tags/tec/">tec</a><small>1</small></li>
+    <li><a href="/tags/tec/">tec</a><small>2</small></li>
   
     <li><a href="/tags/twitter/">twitter</a><small>1</small></li>
   

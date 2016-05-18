@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>画像アップロードの話 | Iwablo</title>
+  <meta name="author" content="IwateBison">
+  
+  <meta name="description" content="ブログに画像をアップロードしたい ツイッターに既にアップした画像をブログに持ってくるのは，Twilogとかで適当にpost開いて画像の元URL(末尾に拡張子があるやつ)をコピーしてくれば簡単なんだけど，わざわざpostするほどの画像じゃない場合に簡略化が多少困ったのでメモる  1.Google Dr">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="画像アップロードの話"/>
+  <meta property="og:site_name" content="Iwablo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Iwablo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Iwablo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-05-18T04:54:35.000Z"><a href="/2016/05/18/etc02/">2016-05-18</a></time>
+      
+      
+  
+    <h1 class="title">画像アップロードの話</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="ブログに画像をアップロードしたい"><a href="#ブログに画像をアップロードしたい" class="headerlink" title="ブログに画像をアップロードしたい"></a>ブログに画像をアップロードしたい</h3><hr> <p>ツイッターに既にアップした画像をブログに持ってくるのは，Twilogとかで適当にpost開いて画像の元URL(末尾に拡張子があるやつ)をコピーしてくれば簡単なんだけど，わざわざpostするほどの画像じゃない場合に簡略化が多少困ったのでメモる</p> <hr> <p>1.Google DriveやOneDriveなどのクラウドストレージを試す</p> <p>ダメだった</p> <p>アップロードは簡単だし自動化もできるんだけど，肝心のファイル直リンができない．ファイル直リンができないと，URL末尾が拡張子でなくなるため，ブログ内の画像に適用されるLightBox（画像を押すとポップアップしてイイ感じに表示されるやつ）に認識されないため，気持ちが悪くなる</p> <hr> <p>2.スマホからできることを試す</p> <p>そもそも，写真をアップロードするのがたいていスマートホンで撮った場合なので，スマホからシームレスにアップロードしてURL取得って流れにしたい．なので，スマホのギャラリー機能から飛べる共有機能を探した．<br>で，その中にあるTwitterのダイレクトメッセージ機能が使えそうだと考えた．Twitterのダイレクトメッセージは，自分にも送信できるため，たまにメモの代わりに使っているのだが，ここに画像つけて送ってしまえばいいという発想だ．Twitterに上げたくない画像をアップするって話だったので，正直盲点だった．気づいてよかった．<br>ただ，Twitterにアップロードした画像のURLには，末尾に大きさを変更する<code>:Large</code>等のオプションが付いている場合があるので，ブログに持ってくる場合はこれを削っておく．</p> <hr> <p>3.マークダウン記法以外で画像挿入</p> <p>スマホで撮った写真はアホみたいにでかいので，リサイズしてページに貼り付けたいが，なぜかマークダウン記法では画像の大きさを指定できないらしい．なので，そのまま貼り付けるとクソでかくなって気持ちが悪くなる．今のところマークダウンでは解決できないっぽいので，画像の部分だけHTML imgタグで記述する．マークダウンは内部的にはHTMLの再翻訳みたいなものなので，mdにHTMLを書いても認識されるらしい．</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;画像のURL.jpg&quot; width=&quot;任意の幅px&quot; /&gt;</span><br></pre></td></tr></table></figure> <p>これで，スマホで写真撮ったら自分にDして元URLをコピーしてブログに貼り付けるってステップになったので楽．<br>LightBoxに適用されれば触って拡大してもわりといいかんじにリサイズしてくれるので楽．</p> <p>おわり</p>
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/hexo/">hexo</a>, <a href="/tags/tec/">tec</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:iwatebison.github.io">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/game/">game</a><small>3</small></li>
+  
+    <li><a href="/tags/gbf/">gbf</a><small>7</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
+  
+    <li><a href="/tags/life/">life</a><small>6</small></li>
+  
+    <li><a href="/tags/tec/">tec</a><small>2</small></li>
+  
+    <li><a href="/tags/twitter/">twitter</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 IwateBison
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
