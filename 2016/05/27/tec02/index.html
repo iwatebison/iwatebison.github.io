@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>デュアルブートマシンでWindows10にアップデートした時の話 | Iwablo</title>
+  <meta name="author" content="IwateBison">
+  
+  <meta name="description" content="何もしてないのにパソコンが勝手に自殺した  LinuxとWindowsでデュアルブートにしてるPCでWindows10にアップデートかけたらパソコンがぶっ壊れた．検索したら同じ症状でトラブッてる人がいっぱいいた．どうやらwindows10アップデートでは勝手にリカバリ用のパーティションを追加したりす">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="デュアルブートマシンでWindows10にアップデートした時の話"/>
+  <meta property="og:site_name" content="Iwablo"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Iwablo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Iwablo</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-05-27T07:45:38.000Z"><a href="/2016/05/27/tec02/">2016-05-27</a></time>
+      
+      
+  
+    <h1 class="title">デュアルブートマシンでWindows10にアップデートした時の話</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="何もしてないのにパソコンが勝手に自殺した"><a href="#何もしてないのにパソコンが勝手に自殺した" class="headerlink" title="何もしてないのにパソコンが勝手に自殺した"></a>何もしてないのにパソコンが勝手に自殺した</h3><hr> <p><img src="/2016/05/27/tec02//rescue.jpg" width="320px"></p> <p>LinuxとWindowsでデュアルブートにしてるPCでWindows10にアップデートかけたらパソコンがぶっ壊れた．<br>検索したら同じ症状でトラブッてる人がいっぱいいた．どうやらwindows10アップデートでは勝手にリカバリ用のパーティションを追加したりするらしく，デュアルブートのパーティション構成によってはマスターブートレコードが喪失し起動しなくなるということらしい．同じ症状で一番古い記事が1年前の評価版の時のだったので，さすがになんか対策しろよと思った．</p> <p>以下回復手順</p> <ol> <li>Ubuntu 14.04をダウンロード</li> <li><a href="https://osdn.jp/projects/sfnet_unetbootin/" target="_blank" rel="external">UNetbootin</a>を用いてUbuntuライブ起動用USBメモリを作製</li> <li>自殺したPCの死体にUSBメモリを挿してLive起動<ol> <li>何故か起動したUbuntuデスクトップでフォントが壊れ文字が見えない</li> <li>Xtermを起動して何とか作業を継続</li> </ol> </li> <li>インターネットへ接続し，<a href="http://ms-sys.sourceforge.net/#Download" target="_blank" rel="external">sourceforgeからms-sysのtar</a>をwgetで取得</li> <li>tarを展開し，フォルダ内で<code>$ make</code>した後<code>$ sudo make install</code>を実行</li> <li>MBRの修復コマンドを実行<code>$ sudo ms-sys -7 /dev/sda</code></li> </ol> <p>これでWindows10のインストールが再開し，後の再起動でもトラブルなく進めることができた．が，Linuxを入れていたパーティションがぶっ飛んだっぽいのであんまり許してない．</p> <h5 id="どうせ最近はVM上でUbuntu動かしてるから別にいいけど．"><a href="#どうせ最近はVM上でUbuntu動かしてるから別にいいけど．" class="headerlink" title="どうせ最近はVM上でUbuntu動かしてるから別にいいけど．"></a>どうせ最近はVM上でUbuntu動かしてるから別にいいけど．</h5><h3 id="OWとかの話"><a href="#OWとかの話" class="headerlink" title="OWとかの話"></a>OWとかの話</h3><hr> <p>オーバーウォッチたのしい<br>でも攻めの時に仲間待たずに突っ込んで一瞬で蒸発みたいなこと繰り返されると抜けなくなるからやめてほしい</p> <h4 id="あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ"><a href="#あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ" class="headerlink" title="あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ"></a>あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ</h4><h5 id="あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ"><a href="#あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ" class="headerlink" title="あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ"></a>あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ</h5><p>グラブルたのしい<br>古戦場でいつもより起床が1時間早まってるので眠い<br>銀天更に緩和されるけど証と信念が足りなくてベルセルク来月以降になる．</p> <h5 id="HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・"><a href="#HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・" class="headerlink" title="HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・"></a>HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・</h5><p>最近はカジノマメにやるようになったから今回の半額で毎日フルで自発できて，かなり進んだ．土がほぼ完成した．やっぱどんなときでも自発が大事だとわかった．</p> <p>おわり</p>
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/tec/">tec</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Kommentare</h1>
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:iwatebison.github.io">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/game/">game</a><small>5</small></li>
+  
+    <li><a href="/tags/gbf/">gbf</a><small>8</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
+  
+    <li><a href="/tags/life/">life</a><small>7</small></li>
+  
+    <li><a href="/tags/ow/">ow</a><small>1</small></li>
+  
+    <li><a href="/tags/tec/">tec</a><small>4</small></li>
+  
+    <li><a href="/tags/twitter/">twitter</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2016 IwateBison
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

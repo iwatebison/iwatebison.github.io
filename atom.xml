@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iwatebison.github.io/"/>
-  <updated>2016-05-25T06:34:54.000Z</updated>
+  <updated>2016-05-27T07:45:38.000Z</updated>
   <id>http://iwatebison.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>デュアルブートマシンでWindows10にアップデートした時の話</title>
+    <link href="http://iwatebison.github.io/2016/05/27/tec02/"/>
+    <id>http://iwatebison.github.io/2016/05/27/tec02/</id>
+    <published>2016-05-27T07:45:38.000Z</published>
+    <updated>2016-05-27T07:45:38.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;何もしてないのにパソコンが勝手に自殺した&quot;&gt;&lt;a href=&quot;#何もしてないのにパソコンが勝手に自殺した&quot; class=&quot;headerlink&quot; title=&quot;何もしてないのにパソコンが勝手に自殺した&quot;&gt;&lt;/a&gt;何もしてないのにパソコンが勝手に自殺した&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;&lt;img src=&quot;/2016/05/27/tec02//rescue.jpg&quot; width=&quot;320px&quot;&gt;&lt;/p&gt; &lt;p&gt;LinuxとWindowsでデュアルブートにしてるPCでWindows10にアップデートかけたらパソコンがぶっ壊れた．&lt;br&gt;検索したら同じ症状でトラブッてる人がいっぱいいた．どうやらwindows10アップデートでは勝手にリカバリ用のパーティションを追加したりするらしく，デュアルブートのパーティション構成によってはマスターブートレコードが喪失し起動しなくなるということらしい．同じ症状で一番古い記事が1年前の評価版の時のだったので，さすがになんか対策しろよと思った．&lt;/p&gt; &lt;p&gt;以下回復手順&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Ubuntu 14.04をダウンロード&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://osdn.jp/projects/sfnet_unetbootin/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UNetbootin&lt;/a&gt;を用いてUbuntuライブ起動用USBメモリを作製&lt;/li&gt; &lt;li&gt;自殺したPCの死体にUSBメモリを挿してLive起動&lt;ol&gt; &lt;li&gt;何故か起動したUbuntuデスクトップでフォントが壊れ文字が見えない&lt;/li&gt; &lt;li&gt;Xtermを起動して何とか作業を継続&lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;li&gt;インターネットへ接続し，&lt;a href=&quot;http://ms-sys.sourceforge.net/#Download&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sourceforgeからms-sysのtar&lt;/a&gt;をwgetで取得&lt;/li&gt; &lt;li&gt;tarを展開し，フォルダ内で&lt;code&gt;$ make&lt;/code&gt;した後&lt;code&gt;$ sudo make install&lt;/code&gt;を実行&lt;/li&gt; &lt;li&gt;MBRの修復コマンドを実行&lt;code&gt;$ sudo ms-sys -7 /dev/sda&lt;/code&gt;&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;これでWindows10のインストールが再開し，後の再起動でもトラブルなく進めることができた．が，Linuxを入れていたパーティションがぶっ飛んだっぽいのであんまり許してない．&lt;/p&gt; &lt;h5 id=&quot;どうせ最近はVM上でUbuntu動かしてるから別にいいけど．&quot;&gt;&lt;a href=&quot;#どうせ最近はVM上でUbuntu動かしてるから別にいいけど．&quot; class=&quot;headerlink&quot; title=&quot;どうせ最近はVM上でUbuntu動かしてるから別にいいけど．&quot;&gt;&lt;/a&gt;どうせ最近はVM上でUbuntu動かしてるから別にいいけど．&lt;/h5&gt;&lt;h3 id=&quot;OWとかの話&quot;&gt;&lt;a href=&quot;#OWとかの話&quot; class=&quot;headerlink&quot; title=&quot;OWとかの話&quot;&gt;&lt;/a&gt;OWとかの話&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;オーバーウォッチたのしい&lt;br&gt;でも攻めの時に仲間待たずに突っ込んで一瞬で蒸発みたいなこと繰り返されると抜けなくなるからやめてほしい&lt;/p&gt; &lt;h4 id=&quot;あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ&quot;&gt;&lt;a href=&quot;#あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ&quot; class=&quot;headerlink&quot; title=&quot;あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ&quot;&gt;&lt;/a&gt;あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ&lt;/h4&gt;&lt;h5 id=&quot;あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ&quot;&gt;&lt;a href=&quot;#あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ&quot; class=&quot;headerlink&quot; title=&quot;あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ&quot;&gt;&lt;/a&gt;あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ&lt;/h5&gt;&lt;p&gt;グラブルたのしい&lt;br&gt;古戦場でいつもより起床が1時間早まってるので眠い&lt;br&gt;銀天更に緩和されるけど証と信念が足りなくてベルセルク来月以降になる．&lt;/p&gt; &lt;h5 id=&quot;HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・&quot;&gt;&lt;a href=&quot;#HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・&quot; class=&quot;headerlink&quot; title=&quot;HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・&quot;&gt;&lt;/a&gt;HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・&lt;/h5&gt;&lt;p&gt;最近はカジノマメにやるようになったから今回の半額で毎日フルで自発できて，かなり進んだ．土がほぼ完成した．やっぱどんなときでも自発が大事だとわかった．&lt;/p&gt; &lt;p&gt;おわり&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;何もしてないのにパソコンが勝手に自殺した&quot;&gt;&lt;a href=&quot;#何もしてないのにパソコンが勝手に自殺した&quot; class=&quot;headerlink&quot; title=&quot;何もしてないのにパソコンが勝手に自殺した&quot;&gt;&lt;/a&gt;何もしてないのにパソコンが勝手に自殺した&lt;/h3&gt;&lt;
+    
+    </summary>
+    
+    
+      <category term="tec" scheme="http://iwatebison.github.io/tags/tec/"/>
+    
+  </entry>
   
   <entry>
     <title>Overwatchの話</title>

@@ -50,6 +50,38 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-05-27T07:45:38.000Z"><a href="/2016/05/27/tec02/">2016-05-27</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/05/27/tec02/">デュアルブートマシンでWindows10にアップデートした時の話</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="何もしてないのにパソコンが勝手に自殺した"><a href="#何もしてないのにパソコンが勝手に自殺した" class="headerlink" title="何もしてないのにパソコンが勝手に自殺した"></a>何もしてないのにパソコンが勝手に自殺した</h3><hr> <p><img src="/2016/05/27/tec02//rescue.jpg" width="320px"></p> <p>LinuxとWindowsでデュアルブートにしてるPCでWindows10にアップデートかけたらパソコンがぶっ壊れた．<br>検索したら同じ症状でトラブッてる人がいっぱいいた．どうやらwindows10アップデートでは勝手にリカバリ用のパーティションを追加したりするらしく，デュアルブートのパーティション構成によってはマスターブートレコードが喪失し起動しなくなるということらしい．同じ症状で一番古い記事が1年前の評価版の時のだったので，さすがになんか対策しろよと思った．</p> <p>以下回復手順</p> <ol> <li>Ubuntu 14.04をダウンロード</li> <li><a href="https://osdn.jp/projects/sfnet_unetbootin/" target="_blank" rel="external">UNetbootin</a>を用いてUbuntuライブ起動用USBメモリを作製</li> <li>自殺したPCの死体にUSBメモリを挿してLive起動<ol> <li>何故か起動したUbuntuデスクトップでフォントが壊れ文字が見えない</li> <li>Xtermを起動して何とか作業を継続</li> </ol> </li> <li>インターネットへ接続し，<a href="http://ms-sys.sourceforge.net/#Download" target="_blank" rel="external">sourceforgeからms-sysのtar</a>をwgetで取得</li> <li>tarを展開し，フォルダ内で<code>$ make</code>した後<code>$ sudo make install</code>を実行</li> <li>MBRの修復コマンドを実行<code>$ sudo ms-sys -7 /dev/sda</code></li> </ol> <p>これでWindows10のインストールが再開し，後の再起動でもトラブルなく進めることができた．が，Linuxを入れていたパーティションがぶっ飛んだっぽいのであんまり許してない．</p> <h5 id="どうせ最近はVM上でUbuntu動かしてるから別にいいけど．"><a href="#どうせ最近はVM上でUbuntu動かしてるから別にいいけど．" class="headerlink" title="どうせ最近はVM上でUbuntu動かしてるから別にいいけど．"></a>どうせ最近はVM上でUbuntu動かしてるから別にいいけど．</h5><h3 id="OWとかの話"><a href="#OWとかの話" class="headerlink" title="OWとかの話"></a>OWとかの話</h3><hr> <p>オーバーウォッチたのしい<br>でも攻めの時に仲間待たずに突っ込んで一瞬で蒸発みたいなこと繰り返されると抜けなくなるからやめてほしい</p> <h4 id="あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ"><a href="#あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ" class="headerlink" title="あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ"></a>あと俺がハンゾーピックしてんのに後出しでウィドウピックすんのもやめろ</h4><h5 id="あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ"><a href="#あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ" class="headerlink" title="あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ"></a>あと押すシチュエーションで俺のラインハルトがラインあげようとしてんのにすっごい後ろからチマチマ狙撃すんのもやめろ</h5><p>グラブルたのしい<br>古戦場でいつもより起床が1時間早まってるので眠い<br>銀天更に緩和されるけど証と信念が足りなくてベルセルク来月以降になる．</p> <h5 id="HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・"><a href="#HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・" class="headerlink" title="HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・"></a>HL行き始めたのが元カレ入ってからで，今まで行けてなかったのはそもそもマグナ武器がまだ揃ってないからで，マグナ武器揃ってないのはカジノサボっててほとんど自発できてなかったから・・・</h5><p>最近はカジノマメにやるようになったから今回の半額で毎日フルで自発できて，かなり進んだ．土がほぼ完成した．やっぱどんなときでも自発が大事だとわかった．</p> <p>おわり</p>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-05-25T06:34:54.000Z"><a href="/2016/05/25/ow01/">2016-05-25</a></time>
       
       
@@ -332,38 +364,6 @@
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-05-10T08:58:56.000Z"><a href="/2016/05/10/life02/">2016-05-10</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/05/10/life02/">BBQした話</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h3 id="大型連休"><a href="#大型連休" class="headerlink" title="大型連休"></a>大型連休</h3><hr> <p>仕事があったので暦の通りに休んだ．3,4,5日に実家に帰り，何やかやあって死ぬほど飲み食いした記憶しかない．実家はPC環境が貧弱なので仕事もできず，ろくに遊べもしないので早々にアパートに戻る．</p> <h3 id="いつもの河原で肉を焼く"><a href="#いつもの河原で肉を焼く" class="headerlink" title="いつもの河原で肉を焼く"></a>いつもの河原で肉を焼く</h3><hr> <p>昨年恒例行事になっていた例の河原で肉を焼く会を6日にやった．その日は仕事だったので前日にささみ燻製を仕込み，仕事終わりに急いで駆けつけた．<br>しばらく使ってなかった網が錆びてたりしたけど，久しぶりに屋外でジュニアバーナー使ってウインナーゆでたり，ヤシガラ成形炭（通称課金アイテム）を使って肉を焼くのは楽しかった．ヤシガラだけでもかなり焼けるから普通に楽でいいと思った．<br>あとなんかジップロックみたいなので炊くご飯とか丸型飯盒で炊飯チャレンジしてたけどことごとく失敗してたのでまたやりたい．</p> <p>焚き火も楽しい</p> <p><blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-version="6" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,.5),0 1px 10px 0 rgba(0,0,0,.15);margin:1px;max-width:658px;padding:0;width:99.375%;width:-webkit-calc(100% - 2px);width:calc(100% - 2px)"><div style="padding:8px"> <div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:50% 0;text-align:center;width:100%"> <div style="background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC);display:block;height:44px;margin:0 auto -44px;position:relative;top:-22px;width:44px"></div></div> <p style="margin:8px 0 0 0;padding:0 4px"> <a href="https://www.instagram.com/p/BFEJj_duodX/" style="color:#000;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:17px;text-decoration:none;word-wrap:break-word" target="_blank">最初の火の炉</a></p> <p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin-bottom:0;margin-top:8px;overflow:hidden;padding:8px 0 7px;text-align:center;text-overflow:ellipsis;white-space:nowrap">@yakisovaが投稿した写真 - <time style="font-family:Arial,sans-serif;font-size:14px;line-height:17px" datetime="2016-05-06T11:53:44+00:00">2016 5月 6 4:53午前 PDT</time></p></div></blockquote></p> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script><p>インスタの埋め込みコードクソ長いな</p>
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
 
 <nav id="pagination">
   
@@ -397,7 +397,7 @@
   
     <li><a href="/tags/ow/">ow</a><small>1</small></li>
   
-    <li><a href="/tags/tec/">tec</a><small>3</small></li>
+    <li><a href="/tags/tec/">tec</a><small>4</small></li>
   
     <li><a href="/tags/twitter/">twitter</a><small>1</small></li>
   
