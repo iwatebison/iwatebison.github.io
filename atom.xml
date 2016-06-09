@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://iwatebison.github.io/"/>
-  <updated>2016-06-08T02:14:09.000Z</updated>
+  <updated>2016-06-09T09:28:41.000Z</updated>
   <id>http://iwatebison.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>グラブルの話４</title>
+    <link href="http://iwatebison.github.io/2016/06/09/gbf06/"/>
+    <id>http://iwatebison.github.io/2016/06/09/gbf06/</id>
+    <published>2016-06-09T09:28:41.000Z</published>
+    <updated>2016-06-09T09:28:41.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Twitter連携のAPBP回復機能の話&quot;&gt;&lt;a href=&quot;#Twitter連携のAPBP回復機能の話&quot; class=&quot;headerlink&quot; title=&quot;Twitter連携のAPBP回復機能の話&quot;&gt;&lt;/a&gt;Twitter連携のAPBP回復機能の話&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;今のジョブはこれ！ってやつ投稿して即post消すより，自分にダイレクトメッセージで送ってしまったほうが楽だよという話．&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;/2016/06/09/gbf06//twitter.PNG&quot; width=&quot;320px&quot;&gt;&lt;/p&gt; &lt;p&gt;こんな感じで&lt;code&gt;D &amp;lt;自分のTwitter ID&amp;gt;&lt;/code&gt;と入力すれば，自分宛てのダイレクトメッセージとして送信されるので，タイムラインを汚さずにAPBPが回復できます．よろしくお願いします．&lt;/p&gt; &lt;p&gt;今のジョブはこれ！って日本語，冷静になると意味がわからん．&lt;/p&gt; &lt;h3 id=&quot;ディフェンドオーダー&quot;&gt;&lt;a href=&quot;#ディフェンドオーダー&quot; class=&quot;headerlink&quot; title=&quot;ディフェンドオーダー&quot;&gt;&lt;/a&gt;ディフェンドオーダー&lt;/h3&gt;&lt;hr&gt; &lt;p&gt;今日の19時ころに1回めが来るらしい．&lt;br&gt;とりあえず皆初見だしいろいろ試したらいいと思う．自分は火グランデで行く．&lt;br&gt;ランク3の報酬にフローレンっぽいやつがあるので当面はそれを目指してやっていくことになりそう．あと汁種の回収．&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Twitter連携のAPBP回復機能の話&quot;&gt;&lt;a href=&quot;#Twitter連携のAPBP回復機能の話&quot; class=&quot;headerlink&quot; title=&quot;Twitter連携のAPBP回復機能の話&quot;&gt;&lt;/a&gt;Twitter連携のAPBP回復機能の話&lt;/h3&gt;&lt;
+    
+    </summary>
+    
+    
+      <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
+    
+      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
+    
+  </entry>
   
   <entry>
     <title>テイルズコラボの話</title>
@@ -31,9 +53,9 @@
     </summary>
     
     
-      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
-    
       <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
+    
+      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
     
   </entry>
   
@@ -115,9 +137,9 @@
     </summary>
     
     
-      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
-    
       <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
+    
+      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
     
   </entry>
   
@@ -307,9 +329,9 @@
     </summary>
     
     
-      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
-    
       <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
+    
+      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
     
   </entry>
   
@@ -329,9 +351,9 @@
     </summary>
     
     
-      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
-    
       <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
+    
+      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
     
   </entry>
   
@@ -373,9 +395,9 @@
     </summary>
     
     
-      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
-    
       <category term="gbf" scheme="http://iwatebison.github.io/tags/gbf/"/>
+    
+      <category term="game" scheme="http://iwatebison.github.io/tags/game/"/>
     
   </entry>
   
